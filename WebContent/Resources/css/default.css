@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 5em;
+}
+
+body{
+    /*font: 0.81em/120% Tahoma, Arial, Sans-Serif;*/
+
+}
+
+/*.bottom {
+    position: relative;
+    background-color: yellow;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+}*/
+
+.conteudo {
+    background-color: #FFFFFF;
+
+    /*
+        background: #FFF;
+        margin: 0 auto;
+        width: 1430px;
+        position: relative;
+        margin-bottom: -16px;*/
+}
+/**{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}*/
+
+.ui-panel .ui-panel-title {
+    margin: 0.1em 10px 0.2em 0;
+    font-size: 1.4em;
+
+}
+.ui-layout-unit-header-title, .ui-layout-unit-footer-title {
+    font-size: 1.6em !important;
+}
+.ui-layout-unit-header, .ui-layout-unit-footer {
+    height: 30px;
+    padding: 0.4em 0.2em 0.4em 0.4em;
+
+
+}
+
+.ui-layout-unit-header-title, .ui-layout-unit-footer-title {
+    font-size: 20px;
+}
+
+
+
+.ui-button-text-icon-left .ui-button-text {
+    padding: .3em 1em .3em 2.1em;
+    font-size: 18px;
+
+}
+
+.botaRelato{
+    padding: .1em 1em .1em 2.1em;
+    font-size: 1px !important;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #2e6e9e;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.ui-panelmenu .ui-menuitem-text {
+    float: left;
+    font-size: 1.2em;
+    font-family: sans-serif !important;
+}
+.ui-menu .ui-menuitem-text {
+    float: left;
+    font-size: 20px;
+    color: #1d5987;
+    position: relative;
+    margin-left: 20px;
+    font-family: sans-serif !important;
+}
+
+.ui-datepicker-year{
+    font-size: 1.2em;   
+}
+
+.ui-datepicker-month{
+    font-size: 1.2em;   
+}
+
+/*.ui-button-text-only .ui-button-text {
+    padding: .3em 2em;
+    margin-top: 0.5em;
+    margin-bottom: -0.8em;
+}*/
+
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: .3em 16px .1em 0;
+    font-size: 16px;
+}
+
+.ui-clock {
+    padding: 4px 10px; 
+    left: 5em; 
+    margin-left: 0em !important ;
+}
+
+.ui-widget-header {
+    /* color: #ffffff; */
+    font-weight: bold;
+    font-size: 20px;
+    /* background: blanchedalmond; */
+}
+.ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td {
+    padding: 4px 10px;
+    overflow: hidden;
+    /* border-width: 1px; */
+    border-style: solid;
+    font-size: 20px;
+    color: #1d5987;
+}
+.ui-menu .ui-menuitem-text {
+    float: left;
+    font-size: 10px;
+    color: #1d5987;
+    position: relative;
+}
+.ui-menu .ui-menu-parent .ui-menu-child {
+    display: none;
+    width: 25em;
+    padding: 0.3em;
+    position: absolute;
+    margin: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+*{
+    /* margin: 0px; */
+    /* padding: 0px; */
+    vertical-align: top;
+    color: #1d5987;
+}
+.ui-panel .ui-panel-title {
+    margin: 0.1em 10px 0.2em 0;
+    font-size: 1.4em;
+    color: white;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /*font-size: 16px !important;*/
+    vertical-align: -webkit-baseline-middle;
+}
+.ui-menu .ui-menuitem-text {
+    float: left;
+    font-size: 18px;
+    color: #1d5987;
+    position: relative;
+    margin-left: 20px;
+    font-family: helveca;
+    font-size: 18px!important;
+}
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: .3em 16px .1em 0;
+    font-size: 16px;
+    color: white;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px !important;
+    vertical-align: -webkit-baseline-middle;
+    /* border-radius: 4px; */
+    /* margin-top: 10; */
+}
+
+.ui-paginator {
+    padding: 2px!important; 
+    text-align:initial;
+
+
+
+    border-bottom: none;
+    /* margin-top: 20; */
+}
+.ui-selectmanycheckbox label, .ui-selectoneradio label {
+    display: block;
+    margin-top: 4px;
+    padding: 10px!important;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: 0.35;
+    /*filter: Alpha(Opacity=35);*/
+    background-image: none;
+}
+
+
+.ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all{
+    background: white!important;
+}
+
+.custom .ui-widget-header{
+    background: white;
+    border-bottom-color: #1d5987!important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    color: #1d5987;
+}
+.custom2 .ui-widget-header  {
+    background: white;
+    border-bottom-color: #1d5987!important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    color: #1d5987;
+    border: none;
+
+}
+
+
+
+
+.ui-tabs .ui-tabs-panel {
+    border-width: 1px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+.ui-tabs.ui-tabs-top > .ui-tabs-nav li {
+    border-bottom: 0;
+    top: 1px;
+    margin-bottom: -1;
+}
+
+/*.tabela .ui-widget-content{
+     border-left: none; 
+     border-right: none; 
+     border-bottom: none;     
+}*/
+
+.tabela .ui-widget-content .ui-datatable-empty-message {
+    /*     border-left: none; 
+         border-right: none; 
+         border-bottom: none; */
+
+}
+
+.ui-panelgrid td {
+    /*    border-width: 1px;
+        border-style: solid;
+        border-color: inherit;
+        padding: 4px 10px;*/
+    border: none;
+}
+
+.ui-panelgrid tr {
+    /*    border-width: 1px;
+        border-style: solid;*/
+    color: #a6c9e2;
+    border: none;
+}
+
+.ui-panelgrid td {
+    /*    border-width: 1px;
+        border-style: solid;*/
+    border-color: inherit;
+    padding: 4px 10px;
+    background: white;
+}
+
+.ui-datatable .ui-datatable-footer {
+    border-top: 1px none;
+    background: #5c9ccc url("/assembleia/javax.faces.resource/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png.xhtml?ln=primefaces-redmond") 50% 50% repeat-x!important;
+    color: #444;
+}
+
+.linhaSemBordaFluxoReceita {   
+    border-right: 1px solid white!important;
+    border-left: 1px solid white!important;
+
+    color: #5cb85c!important; 
+}
+
+.linhaSemBordaFluxoDespesa{
+    border-right: 1px solid white!important;
+    border-left: 1px solid white!important;
+    color: #d9534f!important;
+
+
+}
+.ui-datatable-data-empty .ui-dt-c {
+    width: 100% !important;
+    background: red;
+}
+
+.linhaSemBordaRelatorios {   
+    border-right: 1px solid white!important;
+    border-left: 1px solid white!important;
+    padding: 8px;
+    line-height: 2;
+    /* color: #444!important; */
+}
+
+.ui-menubar {
+    width: auto;
+}

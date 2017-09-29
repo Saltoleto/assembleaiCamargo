@@ -1,0 +1,98 @@
+
+#wrapper {
+    width: 950px!important;
+    height: 430px!important;
+    padding: 10px!important;
+    margin-top: 50px!important;
+
+
+    /* margin-left: 5em!important; */ 
+    background: url(../img/bg_banner.png) no-repeat!important;
+    padding-right: 10px;
+}
+#inner {
+    position: relative!important;
+    width: 935px!important;
+    height: 390px!important;
+    overflow: hidden!important;
+    float: left;
+}
+#carousel img {
+    width: 935px!important;
+    height: 390px!important;
+    overflow: hidden!important;
+    float: left!important;
+
+}
+
+#navi {
+    /* background-color: #333; */
+    /* background-color: rgba(30, 30, 30, 0.8); */
+    /* background-color: #0000FF; */
+    border-top: none;
+    width: 975px;
+    height: 70px;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    z-index: 10;
+}
+#timer {
+    /*background-color: #222;*/
+    /*background-color: rgba(20, 20, 20, 0.8);*/
+    width: 0;
+    height: 70px;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+}
+#prev, #next, #play {
+    display: block;
+    position: absolute;
+    z-index: 30;
+}
+#prev, #next {
+    width: 47px;
+    height: 47px;
+    top: 13px;
+}
+#play {
+    width: 53px;
+    height: 53px;
+    top: 10px;
+    background: url(/pae-spring/Resources/img/ui/pause.png) 0 0 no-repeat transparent;
+    left: 50%;
+    margin-left: -27px;
+}
+#play.paused {
+    background: url(/pae-spring/Resources/img/ui/play.png) 0 0 no-repeat transparent;
+}
+#prev {
+    background: url(/pae-spring/Resources/img/ui/prev.png) 0 0 no-repeat transparent;
+    left: 220px;
+}
+#next {
+    background: url(/pae-spring/Resources/img/ui/next.png) 0 0 no-repeat transparent;
+    right: 220px;
+}
+
+#donate-spacer {
+    height: 100%;
+}
+#donate {
+    border-top: 1px solid #999;
+    width: 750px;
+    padding: 50px 75px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#donate p, #donate form {
+    margin: 0;
+    float: left;
+}
+#donate p {
+    width: 650px;
+}
+#donate form {
+    width: 100px;}

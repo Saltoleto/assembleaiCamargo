@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-3.0.xsd
+						http://www.springframework.org/schema/jdbc
+						http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+						http://www.springframework.org/schema/security
+                                                http://www.springframework.org/schema/security/spring-security-3.0.xsd
+						http://www.springframework.org/schema/tx
+						http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+						http://www.springframework.org/schema/task
+						http://www.springframework.org/schema/task/spring-task-3.0.xsd
+						http://www.springframework.org/schema/util
+						http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+     
+    <security:http  auto-config="true" access-denied-page="/negado.jsf" use-expressions="true">
+        <security:intercept-url pattern="/despesa/lista.jsf" access="hasAnyRole('ADMIN')"/>          
+        <security:intercept-url pattern="/receita/lista.jsf" access="hasAnyRole('ADMIN')"/>  
+        <security:intercept-url pattern="/fluxocaixa/lista.jsf" access="hasAnyRole('ADMIN')"/>  
+        <security:intercept-url pattern="/usuario/form.jsf" access="hasAnyRole('ADMIN')"/> 
+         
+        <security:intercept-url pattern="/relatorios/despesascategoria.jsf" access="hasAnyRole('ADMIN')"/> 
+        <security:intercept-url pattern="/relatorios/patrimonio.jsf" access="hasAnyRole('ADMIN')"/> 
+        <security:intercept-url pattern="/relatorios/receitascategoria.jsf" access="hasAnyRole('ADMIN')"/> 
+        <security:intercept-url pattern="/relatorios/receitasdespesas.jsf" access="hasAnyRole('ADMIN')"/>  
+        <security:intercept-url pattern="/index.jsf" access="hasAnyRole('ADMIN')"/>                                
+               
+        <security:form-login login-page="/login.jsf" authentication-failure-url="/login.jsf?erro=true"/>
+        <security:logout invalidate-session="true" logout-success-url="/login.jsf?logout" logout-url="/logout" /> 
+    </security:http>
+  
+    <security:authentication-manager>
+        <security:authentication-provider>
+            <security:jdbc-user-service data-source-ref="dataSource"
+                                        users-by-username-query=""
+                                        authorities-by-username-query=""/>
+        </security:authentication-provider>  
+    </security:authentication-manager>
+ 
+    <context:annotation-config />
+    <context:component-scan base-package="br.assembleia.controle" />
+    <context:component-scan base-package="br.assembleia.dao.impl" />
+    <context:component-scan base-package="br.assembleia.service" />
+    <context:component-scan base-package="br.assembleia.converter" /> 
+    
+  
+    
+<!--    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost:5432/assembleia"/>
+        <property name="username" value="postgres" />
+        <property name="password" value="postgres" />
+    </bean>-->
+    
+    
+       <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://127.2.237.130:5432/assembleia"/>
+        <property name="username" value="adminnuwz2hc" />
+        <property name="password" value="tCgsLZRpmPUe" />
+    </bean>
+    
+    
+      <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+          autowire-candidate="default">
+        <property name="dataSource" ref="dataSource" />
+        <property name="persistenceUnitName" value="WeHaveSciencePU" />
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="generateDdl" value="false" />
+                <!--<property name="showSql" value="true" />-->
+                <property name="databasePlatform" value="org.hibernate.dialect.PostgreSQLDialect" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
+          autowire-candidate="default">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"
+                          proxy-target-class="true" />
+
+    <bean
+        class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+    
+
+</beans>

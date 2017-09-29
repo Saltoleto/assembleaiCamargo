@@ -1,0 +1,332 @@
+.ui-menu .ui-menuitem-text {
+    float: left;
+    color: #003399;
+    text-align: left;
+}
+
+.lateral {
+    width: 250px!important;
+    height: 700px!important;
+    float: left!important;
+    /* margin-left: 10px!important; */        
+}
+
+
+.menu_lateral_ {
+    margin-top: 50px!important;
+    float: left!important;
+    font-family: sans-serif!important;
+}
+.menuItemLateral{
+    padding-bottom: 8px!important;
+    color: #488ae6!important;
+    text-decoration: underline!important;
+    border-bottom: solid 1px #e1e1e1!important;
+    width: 16em!important;
+    font-size: 10.5pt!important;
+    padding-bottom: 15px!important;
+
+    /*background: url(../img/menu.png) no-repeat;*/
+}
+
+.menuItemSuperior{
+    /* padding-bottom: 8px!important; */
+    /* color: #488ae6!important; */
+    /*text-decoration: underline!important;*/
+    /* border-right:solid 1px #e1e1e1!important; */
+    /* border-left:solid 1px #e1e1e1!important; */
+    /*width: 16em!important;
+    /*font-size: 10.5pt!important;*/
+    /*padding-bottom: 15px!important;*/
+    /*background: url(../img/menu.png) no-repeat;*/
+    /*border-bottom: solid 2px #e1e1e1!important;*/
+    /* padding-top: 20px!important; */
+    /* border-right: 1px solid!important; */
+    /*border-right-color: #AFD1F4!important;*/
+    font-size: 17px!important;
+    margin-top: 10px;
+}
+
+.Slider{
+    width: 950px!important;
+    height: 430px!important;
+    padding: 10px!important;
+    margin-top: 50px!important;
+    /* margin-left: 5em!important; */
+    background: url(../img/bg_banner.png) no-repeat!important;
+    padding-right: 10px;
+}
+
+.mensagem_semanal{
+    width: 950px!important;
+    height: 140px!important;
+    text-align: center!important;
+    padding: 10px!important;
+    line-height: 140%!important;
+    padding-top: 20px!important;
+    /* margin-left: 5em!important; */ 
+}
+.separator{
+    width: 950px!important;
+    height:0.5px!important;
+    text-align: center!important;
+    padding: 10px!important;
+    line-height: 140%!important;
+    padding-top: 20px!important;
+    margin-left: 5em!important; 
+}
+
+.msemanal {
+    font-style: italic!important;
+    color: #696969!important;
+}
+.tik_palestras {
+    width: 270px!important;
+    height: 250px!important;
+    float: left!important;
+    margin-top: 19px!important;
+    margin-left: 30px!important;     
+    background: url(../img/bloco_inteiro.png)!important;
+}
+.center_mensagem_tik {
+    margin-top: 25px!important;
+    margin-left: 10px!important;
+    width: 212px!important;
+    height: 200px!important;
+    overflow: hidden!important;
+}
+.n_m {
+    width: 300px!important;
+    height: 280px!important;
+    float: left!important;
+    /*margin-left: 50px!important;*/      
+}
+.img_titulo {
+    /* float: left; */
+    /* margin-top: 10px; */
+    /* margin-left: 30px!important; */     
+}
+
+.n_g {
+    width: 350px!important;
+    height: 280px!important;
+    float: left!important;
+
+    margin-left: 1%;
+}
+
+.espiritismobrasil {
+    width: 190px!important;
+    /* padding: 5px!important; */
+    font-size: 8pt!important;
+    height: 80px!important;
+    overflow: hidden!important;
+    float: left!important;
+    text-align: justify!important;
+    margin-left: 7%;
+    vertical-align: baseline;
+    LINE-HEIGHT: 0px;
+}
+
+.divlink {
+    width: 90px!important;
+    /* margin-top: 5px!important; */
+    float: left!important;
+    height: 14px!important;
+    background: #303038!important;
+    text-align: center!important;
+    line-height: 100%!important;
+    color: white!important; 
+}
+
+.centro {
+    width: 1000px!important;
+    height: auto!important;
+    float: left!important;
+}
+
+.menuSuperior {
+    /* width: 70em!important; */
+    height: 40px!important;
+    /* margin-left: 20px!important; */
+    margin-top: 5px!important;
+    font-size: 10px!important;
+    padding: 10px;
+}
+
+.rodape {
+    width: 100%!important;
+    height: 200px!important;
+    float: left!important;
+    margin-top: 20px!important;
+    background: url(../img/bg_rodape.png)!important;
+}
+
+.conteudoRodape {
+    margin-left: 280px!important;
+    margin-top: 40px!important;
+    width: 650px!important;
+    height: 180px!important;
+}
+
+.rodape ul {
+    margin-top: 10px!important;
+    list-style-image: url(../img/marcador_ul.png)!important;
+}
+.menu {
+    width: 950px!important;
+    height: 40px!important;
+    margin-left: 15px!important;
+    margin-top: 20px!important;
+}
+.rodapeLi{
+    float: left!important;
+    width: 290px!important;
+    /* margin-left: 20px; */
+    margin-top: 5px!important;
+}
+.rodapeA{
+    color: #7A7A78!important;
+    text-decoration: none!important;
+    font-size: 10pt!important;
+}
+
+.foot{
+    width: 100%!important;
+    height: 70px!important;
+    float: left!important;
+    background: url(../img/bg_rodape_base.png)!important;
+}
+
+.rodape_pae {
+    font-size: 8pt!important;
+    margin-top: 20px!important;
+    float: left!important;
+    width: 550px!important;
+    margin-left: 320px!important;
+    text-align: center!important;
+    color: #7A7A78!important;
+}
+
+.foot_img {
+    float: right!important;
+    padding: 5px!important;
+    margin-top: 20px!important;
+}
+
+.links {
+    width: 950px!important; 
+    height: 230px!important;
+    float: left!important;
+    margin-top: 40px!important;
+    margin-left: 2em!important; 
+}
+.links_img {
+    margin-right: 37px!important;
+    /*margin-left: 15px!important;*/
+    float: left!important;
+    font-size: 9pt!important;
+    text-align: center!important;
+}
+.links2 {
+    width: 100%!important;
+    height: 180px!important;
+    float: left!important;
+    margin-top: 30px!important;
+    margin-left: 1em!important; 
+}
+
+.links_img2 {
+    margin-right: 20px!important;
+    margin-left: 15px!important;
+    margin-top: 30px!important;
+    float: left!important;
+    font-size: 9pt!important;
+    text-align: justify!important;
+    width: 200px!important;
+}
+
+.tituloPagina {
+    padding-bottom: 20px!important;
+    color: #003399!important;
+    font-size: 18pt!important;
+    font-family: sans-serif;
+}
+
+.center_component {
+    margin-left: 80px!important;
+    width: 830px!important;
+    margin-top: 70px!important;
+    text-align: justify!important;
+    float: left!important;
+    line-height: 140%!important;
+    color: #696969!important;
+    font-family: sans-serif;
+}
+
+.tabMenu {
+    margin: 0;
+    padding: 0 0 0 15px;
+    list-style: none;
+}
+
+.tabMenu li {
+    color: #3A4EA5!important;
+    margin-left: 5px!important;
+    text-align: center!important;
+}
+.divisao_mes {
+    float: left;
+    width: 3px !important;
+    color: #B3B3B3 !important;
+}
+
+.boxTop {
+    background: url(images/boxTop.png) no-repeat;
+    height: 11px;
+    clear: both;
+}
+
+.body {
+    background: #EEEEEE;
+    font-family: sans-serif;
+    color: #696969;
+}
+.ui-menu {
+
+    background: #EEEEEE!important;
+    font-family: sans-serif!important;
+}
+
+.botaosite{
+    webkit-border-radius:10px;
+    border-radius:10px;
+    font-size: 14px;
+    margin-left: 51%;
+}
+.box {float:left; border:1px solid #222; padding:5px; margin: 5px;border: none;margin-top: 15px;}
+.info {color:#778999;font-style:italic}
+
+
+
+.inputContato {
+    background: #e8eff7!important;
+    border-color: #37699f!important;
+    background: url(http://www.stylus.co.za/wp-content/themes/atahualpa/atahualpa/images/inputbackgr.gif) top left no-repeat!important;
+}
+
+.input:focus, textarea:focus, isindex:focus, keygen:focus, select:focus {
+outline-offset: -2px !important;
+}
+.focus {
+outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+.nivoSlider {
+position: relative!important;
+width: 935px!important;
+height: 390px!important;
+overflow: hidden!important;
+float: left;
+}

@@ -1,0 +1,30 @@
+
+.ui-menu .ui-menuitem-text {
+    float: left;
+    font-size: 20px;
+    color: #1d5987;
+    position: relative;
+    font-family: sans-serif ;
+}
+
+.ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td {
+    padding: 4px 10px;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 10px;
+    color: #1d5987;
+    /* border-right: none; */
+    /* background: antiquewhite; */
+}
+.coluna{
+    font-size: 16px !important;
+}
+.ui-menu .ui-menuitem-text {
+    float: left;
+    font-size: 10px;
+    color: #1d5987;
+    position: relative;
+    margin-left: 20px;
+    font-family: sans-serif !important;
+}

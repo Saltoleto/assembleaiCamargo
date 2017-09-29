@@ -1,0 +1,4 @@
+.ui-inputfield.ui-state-focus{
+    width: 300px!important;     
+    transition: all .4s ease-in-out;  
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.ui-datatable .ui-datatable-data .even-row td{  
+    background-color:#FFF;  
+}  
+
+.ui-datatable .ui-datatable-data .odd-row td{  
+    background-color:#FFF;  
+}
+
+.ui-widget-header {
+    background: white!important;
+}

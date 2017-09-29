@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/assembleia">
+<!--  <Resource auth="Container" driverClassName="org.postgresql.Driver" maxActive="20" maxIdle="10" maxWait="-1"
+  name="teste"  
+            password="postgres" 
+            type="javax.sql.DataSource" 
+            url="jdbc:postgresql://localhost:5432/assembleia" 
+            username="postgres"/>-->
+
+ <Resource auth="Container" driverClassName="org.postgresql.Driver" maxActive="20" maxIdle="10" maxWait="-1"
+  name="teste"  
+            password="tCgsLZRpmPUe" 
+            type="javax.sql.DataSource" 
+            url="jdbc:postgresql://127.2.237.130:5432/assembeia" 
+            username="adminnuwz2hc"/>
+</Context>

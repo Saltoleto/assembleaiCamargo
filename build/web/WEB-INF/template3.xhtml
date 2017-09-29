@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:sec="http://www.springframework.org/security/facelets/tags"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+    <f:view contentType="text/html" encoding="ISO-8859-1">
+        <h:head>
+
+            <script type="text/javascript">
+                function start() {
+                    PF('statusDialog').show();
+                }
+
+                function stop() {
+                    PF('statusDialog').hide();
+                }
+            </script>
+
+            <script type="text/javascript">
+                function UR_Start()
+                {
+                    UR_Nu = new Date;
+                    UR_Indhold = showFilled(UR_Nu.getHours()) + ":" + showFilled(UR_Nu.getMinutes()) + ":" + showFilled(UR_Nu.getSeconds());
+                    document.getElementById("ur").innerHTML = UR_Indhold;
+                    setTimeout("UR_Start()", 1000);
+                }
+                function showFilled(Value)
+                {
+                    return (Value > 9) ? "" + Value : "0" + Value;
+                }
+
+            </script>
+            <f:facet name="first">
+                <meta http-equiv="X-UA-Compatible" content="EmulateIE8" />
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Assembleia de Deus Missão</title>
+            </f:facet>
+
+            <link type="text/css" rel="stylesheet" href="#{request.contextPath}/Resources/css/default.css"/>
+            <link type="text/css" rel="stylesheet" href="#{request.contextPath}/Resources/css/syntaxhighlighter.css" />
+            <link type="text/css" rel="stylesheet" href="#{request.contextPath}/Resources/css/botoes.css" />
+            <link rel="shortcut icon" type="image/png" href="#{request.contextPath}/Resources/img/icone.png"/>
+           
+
+
+
+
+            <style type="text/css">
+                .ui-layout-north {
+                    z-index:20 !important;
+                    overflow:visible !important;;
+                }
+
+                .ui-layout-north .ui-layout-unit-content {
+                    overflow:visible !important;
+                }
+            </style>
+            <p:growl id="growl" showDetail="false" sticky="false" life="3000"/>       
+        </h:head>
+
+
+        <h:body onload="UR_Start()"  >
+
+            <p:layout fullPage="true" style="height: 100%; background: red!important;">
+
+                <p:layoutUnit id="top" position="north" style="border: none;" >
+                    <p:menubar style="margin-top: 5px"  >            
+
+                        <p:menuitem style="margin-left: 230px;" value="Visão Geral" url="/index.jsf"/>
+                        
+                        
+
+                        <p:submenu label="Secretaria">
+                            <p:menuitem value="Membros" url="/membro/lista.jsf"/>    
+                            <p:menuitem value="Cargos" url="/cargo/lista.jsf"/>  
+                            <p:menuitem value="Eventos" url="/evento/lista.jsf"/>  
+                            <p:menuitem value="Departamentos" url="/departamento/lista.jsf"/>
+                            <p:menuitem value="Patrimônio" url="/patrimonio/lista.jsf"/>
+                            <p:submenu label="Biblioteca">
+                                <p:menuitem value="Acervo" url="/biblioteca/acervo/lista.jsf"/>    
+                                <p:menuitem value="Empréstimos" url="/biblioteca/emprestimo/lista.jsf"/>                                  
+                            </p:submenu>
+                            <p:menuitem value="Cursos" url="/curso/lista.jsf"/>
+                        </p:submenu>
+
+                        <p:submenu label="Financeiro">
+                            <p:menuitem value="Categoria" url="/categoria/lista.jsf"/> 
+                            <p:menuitem value="Receitas" url="/receita/lista.jsf"/> 
+                            <p:menuitem value="Despesas" url="/despesa/lista.jsf"/> 
+                            <p:menuitem value="Fluxo de Caixa" url="/fluxocaixa/lista.jsf"/> 
+                        </p:submenu>
+
+                        <p:menuitem  value="Relatórios" url="/relatorios/lista.jsf"/>
+
+                        <p:submenu label="Configurações">
+                            <p:menuitem value="Congregação" url="/congregacao/lista.jsf"/>  
+                            <p:menuitem value="Usuarios" url="/usuario/lista.jsf"/>  
+                        </p:submenu>
+
+                        <f:facet name="options">  
+                            <a href="#{request.contextPath}/logout" style="height: 100%">
+                                <img id="imgExit"  title="Encerra a sessão da aplicação" src="#{request.contextPath}/Resources/img/exit.png" style="float:right; 0 0 10px 10px; cursor: pointer;"/> 
+                            </a>
+                        </f:facet>
+                        <f:facet name="options">  
+                            <b  style="float:right; 0 0 10px 10px;padding-top: 5px;padding-right: 5px;color: #1d5987;font-size: 16px !important;">
+                                <h:outputText style="" value="[ #{aplicacaoControle.usuario.login} ]"/>
+                                <font id="ur" title="Relório" size="20em" style="font-size: 18px !important;" face="Trebuchet MS, Verdana, Arial, sans-serif" color="#1d5987"></font>
+
+                            </b>
+                        </f:facet>
+                    </p:menubar>   
+                </p:layoutUnit>
+
+
+                <p:layoutUnit id="bottom" position="south" size="35 " resizable="false" style="height: 100%">
+
+                    <p style="text-align: center; font-weight: bold; color: #1d5987 ; font-size: 14px!important">Assembleia de Deus Missão - Dr. Camargo - #{aplicacaoControle.dataAno()}</p>
+                </p:layoutUnit>
+
+                <p:layoutUnit id="center" position="center"   >
+
+                    <div class="conteudo" align="center" >
+                        <div style=" overflow-x: hidden; overflow-y: hidden; border: none; ">
+                            <ui:insert name="conteudo"/> 
+                        </div>
+
+                    </div>
+                </p:layoutUnit>
+
+            </p:layout>
+
+
+        </h:body>
+
+    </f:view>
+</html>

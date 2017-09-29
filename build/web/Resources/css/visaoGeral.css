@@ -1,0 +1,442 @@
+.tabMembros  {
+    /* margin-top: 100px; */
+    background-color: #fff; 
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    width: 640px;
+    border-color: #bce8f1;
+    font-family: 'Open Sans', sans-serif;  
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block; 
+    border-radius: 4px!important;
+}
+
+.botaoMembro{
+    width: 90px; 
+    color: white; 
+    border-color: #357ebd;
+    border: 1px solid transparent;
+    background:#428bca; 
+    margin-left: 80px; 
+    float: right; 
+    font-size: 12px!important;
+    border-radius: 3px;
+    height: 20px;
+    padding: 1px 5px;
+    margin-top: 10px;
+}
+.tituloMembros{
+    padding: 8px 12px;
+    font-family: sans-serif !important;
+    color: #3a87ad;
+    height: 25px;font-size: 17px !important;                                                  
+    float: left;
+    font-size: 15px!important;
+}
+.ui-datatable.tabMembros th{
+    background: #d9edf7;
+}
+
+.tabResumoFinaneiro  {
+    /*margin-top: 100px;*/
+    background-color: #fff; 
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    width: 640px;
+    border-color: #bce8f1;
+    font-family: 'Open Sans', sans-serif;   
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    display: block;
+}
+
+.botaoResumoFinanceiro{
+    width: 90px; 
+    color: white; 
+    border-color: #357ebd;
+    border: 1px solid transparent;
+    background:#428bca; 
+    margin-left: 80px; 
+    float: right; 
+    font-size: 12px!important;
+    border-radius: 3px;
+    height: 20px;
+    /* padding: 1px 5px; */
+    margin-top: 10px;
+}
+.tituloResumoFinanceiro{
+    padding: 8px 12px;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #3a87ad;
+    height: 25px;font-size: 17px !important;                                                  
+    float: left;
+    font-size: 15px!important;
+}
+
+.ui-datatable.tabResumoFinaneiro th{
+    background: #d9edf7;
+}
+
+
+.tabUltimasReceitas  {
+    /* margin-top: 20px; */
+    background-color: #fff; 
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    width: 640px;
+    border-color: #bce8f1;
+    font-family: 'Open Sans', sans-serif;  
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+.botaoUltimasReceitas{
+    width: 90px; 
+    color: white; 
+    border-color: #4cae4c;
+    border: 1px solid transparent;
+    background:#5cb85c; 
+    margin-left: 80px; 
+    float: right; 
+    font-size: 12px!important;
+    border-radius: 3px;
+    height: 20px;
+    padding: 1px 5px;
+    margin-top: 10px;
+}
+.tituloUltimasReceitas{
+    padding: 8px 12px;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #468847;
+    height: 25px;font-size: 17px !important;                                                  
+    float: left;
+    font-size: 15px!important;
+}
+
+.ui-datatable.tabUltimasReceitas th{
+    background: #dff0d8;
+}
+
+.tabDespesas  {
+    /*margin-top: 20px;*/
+    background-color: #fff; 
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    width: 640px;
+    border-color: #bce8f1;
+    font-family: 'Open Sans', sans-serif;
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    display: block;
+}
+
+.botaoDespesas{
+    width: 90px; 
+    color: white; 
+    border-color: #4cae4c;
+    border: 1px solid transparent;
+    background:#b94a48; 
+    margin-left: 80px; 
+    float: right; 
+    font-size: 12px!important;
+    border-radius: 3px;
+    height: 20px;
+    /* padding: 1px 5px; */
+    margin-top: 10px;
+}
+.tituloDespesas{
+    padding: 8px 12px;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #b94a48;
+    height: 25px;font-size: 17px !important;                                                  
+    float: left;
+    font-size: 15px!important;  
+}
+
+.ui-datatable.tabDespesas th{
+    background: #f2dede;
+
+}
+.tabAniversariantes  {
+    /* margin-top: 20px; */
+    background-color: #fff; 
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    width: 640px;
+    border-color: #bce8f1;
+    font-family: 'Open Sans', sans-serif;
+
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+
+}
+
+.ui-datatable.tabAniversariantes th{
+    background: #d9edf7;
+}
+
+
+.tabEventos  {
+    /*margin-top: 20px;*/
+    background-color: #fff; 
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    width: 640px;
+    border-color: #bce8f1;
+    font-family: 'Open Sans', sans-serif; 
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    display: block;
+}
+
+.ui-datatable.tabEventos th{
+    background: #d9edf7;
+
+
+}
+
+.ui-datatable.dialogMembros th{
+    background: white;
+}
+
+.ui-corner-bottom {
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+
+.ui-fileupload-buttonbar {
+    /* padding: 0.2em 0.4em; */
+    background: none;
+    border: none;  
+}
+
+ui-button-text ui-c{
+
+}
+
+.botaoReceitaFluxoCaixa{
+
+    color: #fff;
+    
+
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px!important;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+
+.botaoImprimirPatrimonio{
+
+    color: #fff;
+    background-color: #428bca;
+    border-color: #4cae4c;
+    display: inline-block;
+    /*padding: 6px 12px;*/
+    padding: 1px 10px!important;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    margin-top: 1px;
+}
+.botaoImprimirCateirinha{
+    float: left;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #4cae4c;
+    display: inline-block;
+    /*padding: 6px 12px;*/
+    padding: 1px 10px!important;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    margin-top: 1px;
+    margin-left: -9px;
+}
+
+.botaoDespesaFluxoCaixa{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px!important;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+
+.botaoDespesaFluxoCaixa:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #d43f3a;
+}
+
+.botaoReceitaFluxoCaixa:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #4cae4c;
+}
+
+.botaoMembro:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #357ebd;
+}
+
+.botaoUltimasReceitas:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #4cae4c;
+}
+
+
+.botaoDespesas:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #d43f3a;
+}
+
+
+
+
+.botaoResumoFinanceiro:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #357ebd;
+}
+
+.botaoImprimirCateirinha:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #357ebd;
+}
+
+
+
+
+
+
+
+.botaoImprimirPatrimonio:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #357ebd;
+}
+
+
+.botaoListar{
+    margin-top: 1px;
+    color: white;
+    background-color: #428bca;
+    /* border-color: #d43f3a; */
+    display: inline-block;
+    padding: 1px 10px!important;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+
+.botaoListar:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #000 #999 #999 #000; 
+
+    background: #357ebd;
+}
+
+
+
+
